@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Inclusions>
+    <User samaccountname="user1" lastupdatedby="systemuser_12" />
+    <User samaccountname="user2" lastupdatedby="jsmith" />
+    <ADGroup samaccountname="group1" lastupdatedby="groupuser1" />
+    <Department departmentname="department1" lastupdatedby="depuser1" />
+    <Role rolename="role1" lastupdatedby="roleuser1" />
+</Inclusions>

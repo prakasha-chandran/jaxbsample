@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="Inclusions">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="User" type="User" minOccurs="0" maxOccurs="unbounded" />
+                <xs:element name="ADGroup" type="ADGroup" minOccurs="0" />
+                <xs:element name="Department" type="Department" minOccurs="0" />
+                <xs:element name="Role" type="Role" minOccurs="0" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="User">
+        <xs:attribute name="samaccountname" type="xs:string"/>
+        <xs:attribute name="lastupdatedby" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:complexType name="ADGroup">
+        <xs:attribute name="samaccountname" type="xs:string"/>
+        <xs:attribute name="lastupdatedby" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:complexType name="Department">
+        <xs:attribute name="departmentname" type="xs:string"/>
+        <xs:attribute name="lastupdatedby" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:complexType name="Role">
+        <xs:attribute name="rolename" type="xs:string"/>
+        <xs:attribute name="lastupdatedby" type="xs:string"/>
+    </xs:complexType>
+</xs:schema>
+
